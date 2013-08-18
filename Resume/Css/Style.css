@@ -1,0 +1,343 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+<!-- end of reset-->
+
+div{
+	background-color:#BFC5C9;
+}
+#header{
+	z-index: 1;
+	position:fixed;
+	width:100em;
+	height:5em;
+	background-color:#FF8800;
+}
+#header>p{
+	font-size: 4.5em;
+	font-family: Helvetica;
+	font-weight: bold;
+	color:white;
+	margin-left: 1em;
+	margin-top: 6px;
+	text-shadow:-2px 0 #B56A00, 0 1px #B56A00;
+}
+.contact{
+	float:left;
+	width:17.58em;
+	height:35em;
+	border: 1px solid #D1CFD0;
+	background-color: #E3E3E3;
+	border-radius: 5px;
+	margin-left: 60px;
+	margin-top:120px;
+	margin-bottom: 40px;
+	box-shadow: 1px 1px 4px #888888
+}
+.contact>ul>li>img {
+	margin-top: 3em;
+	margin-left: 5.1em;
+	border-radius: 10px;
+	border:1px solid #D1CFD0;
+}
+.contact>ul>li>span, 
+.contact>ul>li>p{
+	position:relative;
+	margin-bottom: 1.5em;
+}
+.contact>ul>li:nth-child(2), 
+.contact>ul>li:nth-child(3), 
+.contact>ul>li:nth-child(4), 
+.contact>ul>li:nth-child(5){
+	margin-top: 2em;
+	margin-left: 2em;
+}
+span{
+	font-weight: bold;
+}
+
+a{
+	text-decoration: none;
+	color:#636061;
+	font-family: Garamond;
+
+}
+a:hover{
+	font-weight: bold;
+}
+.education{
+	float:right;
+	width:22em;
+	height:20em;
+	border: 1px solid #D1CFD0;
+	background-color:#E3E3E3;
+	border-radius: 5px;
+	margin-top:120px;
+	margin-right:52em;
+	box-shadow: 1px 1px 4px #888888	
+}
+.education>p,
+.training>p:first-child,
+.skills>p,
+.volunteer>p:first-child,
+.project>p:first-child{
+	font-size:1.22em;
+	font-weight: bold;
+	margin-top: 1em;
+	margin-left: 1em;
+}
+
+.education>ul>li>p:first-child,
+.training>p:nth-child(2),
+.volunteer>p:nth-child(2),
+.project>p:nth-child(2),
+.project>p:nth-child(5){
+	margin-left: 1em;
+	margin-top:1em;
+	font-weight:bold;
+}
+
+.education>ul>li>p:nth-child(2), 
+.education>ul>li>p:nth-child(3), 
+.education>ul>li>p:nth-child(4),
+.training>p:nth-child(2),
+.training>p:nth-child(3),
+.training>p:nth-child(4),
+.volunteer>p:nth-child(n+2){
+	margin-left: 1em;
+}
+
+.education>ul>li>p:nth-child(2),
+.training>p:nth-child(3),
+.volunteer>p:nth-child(3),
+.project>p:nth-child(3),
+.project>p:nth-child(6){
+	font-style: italic;
+}
+
+.education>ul>li>p:nth-child(5){
+	margin-left: 1.8em;
+}
+
+.education>ul>li>p:nth-child(2),
+.education>ul>li>p:nth-child(3),
+.volunteer>p:nth-child(3){
+	margin-bottom: 0.25em;
+}
+
+.experience{
+	float:right;
+	width:39em;
+	height:35em;
+	border: 1px solid #D1CFD0;
+	background-color:#E3E3E3;
+	box-shadow: 1px 1px 4px #888888;
+	border-radius: 5px;
+	margin-top:-320px;
+	margin-right: 150px;
+}
+
+.experience>p:first-child,
+.experience>p:nth-child(2),
+.experience>p:nth-child(4),
+.experience>p:nth-child(7),
+.experience>p:nth-child(10),
+.volunteer>p:nth-child(4){
+	font-weight:bold;
+}
+.experience>p:first-child,
+.experience>p:nth-child(2),
+.experience>p:nth-child(3),
+.project>p:nth-child(3),
+.project>p:nth-child(6){
+	margin-left: 1em;
+}
+.experience>p:first-child,
+.experience>p:nth-child(2){
+	margin-top:1em;
+}
+.experience>p:nth-child(3),
+.experience>p:nth-child(5),
+.experience>p:nth-child(8),
+.experience>p:nth-child(11){
+	font-style: italic;
+}
+
+.experience>p:first-child{
+	font-size:1.22em;
+}
+
+.experience>p:nth-child(4),
+.experience>p:nth-child(5),
+.experience>p:nth-child(7),
+.experience>p:nth-child(8),
+.experience>p:nth-child(10),
+.experience>p:nth-child(11),
+.volunteer>p:nth-child(n+4),
+.project>ul>li{
+	margin-left: 2em;
+}
+
+.experience>ul>li{
+	margin-left: 3em;
+	margin-right: 1em;
+}
+
+.experience>p:nth-child(4),
+.experience>p:nth-child(7),
+.experience>p:nth-child(10){
+	margin-top: 0.3em;
+}
+
+.training{
+	float:right;
+	width:22em;
+	height:10em;
+	border: 1px solid #D1CFD0;
+	background-color:#E3E3E3;
+	border-radius: 5px;
+	margin-top:-200px;
+	margin-right:52em;
+	margin-bottom: 100px;
+	box-shadow: 1px 1px 4px #888888;	
+}
+
+.training>p:nth-child(3){
+	margin-bottom: 0.5em;
+}
+
+.training>p>img{
+	width:100px;
+	height: 100px;
+	border: 1px solid #D1CFD0;
+	border-radius: 5px 27px 5px;
+	margin-left: 230px;
+	margin-top: -300px;
+	clear:both;
+}
+
+.skills{
+	float:left;
+	width:22em;
+	height:12em;
+	border: 1px solid #D1CFD0;
+	background-color: #E3E3E3;
+	border-radius: 5px;
+	margin-left: 60px;
+	margin-top:-40px;
+	margin-bottom: 40px;
+	box-shadow: 1px 1px 4px #888888;
+}
+
+td{
+	width:20em;
+
+}
+
+#language,
+#tools,
+#computer{
+	font-weight:bold;
+	text-align: center;
+}
+
+#language>p,
+#tools>p,
+#computer>p{
+	margin-top: 1em;
+	margin-left: 1em;
+}
+.volunteer{
+	float:right;
+	clear:both;
+	width:19em;
+	height:14em;
+	border: 1px solid #D1CFD0;
+	background-color: #E3E3E3;
+	border-radius: 5px;
+	box-shadow: 1px 1px 4px #888888;
+	margin-right: 830px;
+	margin-top: -250px;
+	margin-bottom: 6em;
+}
+
+.volunteer>p:nth-child(n+4){
+	margin-right: 1em;
+}
+
+.project{
+	float:right;
+	clear:both;
+	width:39em;
+	height:20em;
+	border: 1px solid #D1CFD0;
+	background-color: #E3E3E3;
+	border-radius: 5px;
+	box-shadow: 1px 1px 4px #888888;
+	margin-right: 150px;
+	margin-top: -280px;
+	margin-bottom: 6em;
+}
+
+.project>ul>li{
+	margin-right: 1em;
+}
+
+#footer{
+	clear:both;
+	width:100em;
+	height:3.5em;
+	background-color:#FF8800;
+	font-family: Garamond;
+	color: #636061;
+}
+
+#footer>p{
+	margin-left: 40em;
+}
+
